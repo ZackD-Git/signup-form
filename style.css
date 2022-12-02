@@ -10,8 +10,17 @@
 /* div{
     border: solid 1px red
 } */
+:root{
+    --background-light: #787784;
+    --background-dark: #625e70;
+    --accent-color-light: #E9A6A6;
+    --accent-color-dark: #3c2649;
+    --background-current: var(--background-dark);
+    --accent-color-current: var(--accent-color-dark);
+}
 html{
     color-scheme: dark light;
+    background-color: black;
 }
 
 body{
@@ -29,8 +38,10 @@ img, picture, svg, video{
 .wrapper{
     display: flex;
     align-items: center;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 824px;
     max-height: 100vh;
+    background-color: var(--background-current);
 }
 .hero{
     display: flex;
@@ -42,6 +53,7 @@ img, picture, svg, video{
     background-image: url("../images/Purple Jungle 2453x2812.jpg");
     background-size: max(600px, 100%);
     background-position-x: -200px;
+    box-shadow: 2px 2px 4px black;
 }
 .banner{
     display: flex;
@@ -52,7 +64,7 @@ img, picture, svg, video{
     background-color: rgba(39, 0, 39, 0.27);
 }
 #logo-bird{
-    width: min(120px, 20vh);
+    width: max(95px, 20vh);
 }
 .name{
     font-family: Dancing Script;
@@ -63,5 +75,31 @@ img, picture, svg, video{
     bottom: 10px;
 }
 .sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     width: 66%;
+}
+p{
+    margin-left: 10px;
+}
+.form-block{
+    background-color: var(--background-light);
+    box-shadow: 2px 2px  4px var(--accent-color-current);
+}
+input:valid{
+    border-color:  rgb(11, 199, 11);
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
 }
