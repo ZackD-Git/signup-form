@@ -77,9 +77,9 @@ img, picture, svg, video{
 .sign-up{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
     width: 66%;
 }
 p{
