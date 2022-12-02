@@ -89,8 +89,20 @@ p{
     background-color: var(--background-light);
     box-shadow: 2px 2px  4px var(--accent-color-current);
 }
+legend{
+    margin-left: 10px;
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px var(--accent-color-dark);
+}
+fieldset{
+    border: none;
+}
 input:valid{
     border-color:  rgb(11, 199, 11);
+}
+input:focus{
+    box-shadow: 2px 2px  4px var(--accent-color-current);
 }
 ul{
     display: flex;
@@ -102,4 +114,11 @@ li{
     display: flex;
     flex-direction: column;
     margin-bottom: 3px;
+}
+button{
+    background-color: var(--accent-color-dark);
+    padding: 2px;
+}
+a{
+    color: var(--accent-color-light);
 }
